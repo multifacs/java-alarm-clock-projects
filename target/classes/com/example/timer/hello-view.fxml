@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="390.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="76.0" prefWidth="342.0" spacing="10.0">
+         <children>
+            <TextField fx:id="minutesField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="60.0" promptText="00">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="secondsField" alignment="CENTER" maxWidth="-Infinity" prefHeight="40.0" prefWidth="60.0" promptText="00">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="54.0" prefWidth="342.0">
+         <children>
+            <TextField fx:id="nameField" alignment="CENTER" maxWidth="162.0" prefHeight="25.0" prefWidth="130.0" promptText="Название" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="68.0" prefWidth="342.0">
+         <children>
+            <Label text="Список будильников" />
+         </children>
+      </HBox>
+      <ScrollPane prefHeight="200.0" prefWidth="340.0">
+         <content>
+            <VBox fx:id="eventBox" alignment="TOP_CENTER" maxHeight="10000.0" prefHeight="417.0" prefWidth="305.0" spacing="3.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </content>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </ScrollPane>
+      <VBox alignment="CENTER" prefHeight="63.0" prefWidth="342.0">
+         <children>
+            <Label fx:id="eventLabel" text="Будильник">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="55.0" prefWidth="342.0">
+         <children>
+            <Label fx:id="timeLabel" text="Время" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" top="20.0" />
+   </padding>
+</VBox>
